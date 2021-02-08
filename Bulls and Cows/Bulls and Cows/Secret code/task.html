@@ -9,6 +9,8 @@ We suggest you use the following algorithm to generate the numbers:</p>
 
 <p>This code saves the nanoseconds elapsed since a certain time to the <code class="language-java">pseudoRandomNumber</code> variable. We can assume that this is a random number. You can generate a secret code by iterating over the <code class="language-java">pseudoRandomNumber</code> in the reverse order and adding unique digits. If the <code class="language-java">pseudoRandomNumber</code> lacks the required amount of unique digits, call <code class="language-java">System.nanoTime()</code> again and try to generate the secret code again until you get a satisfactory result.</p>
 
+<p><div class="alert alert-primary">You can use <code class="language-java">Character.getNumericValue(char a)</code> method to get an integer representation of a number!</div></p>
+
 <h2 style="text-align: center;">Objective</h2>
 
 <p>In this stage, your program should generate a pseudo-random number of a given length with unique digits and print it. If the length is greater than 10, the program should print a message containing the word <code class="language-java">Error</code>.  The secret code may contain any digits from 0 to 9 but only once. Secret code shouldn't start with a digit 0: for the first digit of the secret code, use digits from 1 to 9.</p>
